@@ -29,3 +29,12 @@ str(gradexls)
 dim(gradexls)
 summary(gradexls)
 summary(gradexls$msex)
+
+#Exel 또는 SPSS에서 탭 분리 텍스트 파일 형식을 불러올 때
+lectureData <- read.delim("Lecturer Data.dat", header =TRUE)
+lectureData <- read.delim("Lecturer Data.txt", header =TRUE)
+
+#SPSS.sav 파일 가져오기
+#install.packages('foreign')
+lectureData <- read.spss("Lecturer Data.sav",use.values.labels=TRUE,
+                         to.data.frame=TRUE)
