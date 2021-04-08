@@ -8,7 +8,7 @@ gradetxt <- read.table("0201.grade.txt",
 str(gradetxt)
 
 #데이터 가져오기(read.csv)
-gradecsv <- read.csv("0202.grade.csv", 
+gradecsv <- read.csv(file.choose(), 
                      header=TRUE, 
                      na.strings = "."
 )
