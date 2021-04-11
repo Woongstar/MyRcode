@@ -11,3 +11,9 @@ gradetxt$V3 <- factor(gradetxt$V3 ,
                       levels=c(1,2),
                       labels=c("남자","여자")
 )
+
+#데이터 수동 편집
+festivalData <- edit(festivalData)
+
+#데이터 순서 정렬
+festivalData<- festivalData[order(festivalData$day1),]

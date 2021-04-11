@@ -15,6 +15,7 @@ ggplot(wgt, aes(x=sex, y=weight)) +
   geom_boxplot(position="dodge") +
   ggtitle("성별 체중 상자도표")
 
+#산포도
 scatter <- ggplot(examData, aes(Anxiety,Exam, color=Gender))
 scatter + geom_point() + labs(x="시험 불안",y="시험 성적적")+ geom_smooth(method="lm", color="red",fill="Blue",alpha=0.15)
 scatter + geom_point() + labs(x="시험 불안",y="시험 성적적")
